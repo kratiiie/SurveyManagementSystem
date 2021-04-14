@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "CreateSurvey1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device" />
+    <title>Create Survey</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a href="/admin/SurveyList" class="btn bg-purple waves-effect">Back</a>
+                    <br />
+                    <br />
+                    <span style="color:green">
+
+                    </span>
+                    <span style="color:red">
+
+                    </span>
+
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Add New Survey
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form action="/admin/Survey" method="post">
+
+                                <label for="email_address1">Name</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="email_address1" class="form-control" name="Name" placeholder="Enter Survey Title" required>
+                                    </div>
+                                </div>
+
+                                <label for="email_address1">Description</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <textarea class="form-control" name="Description" required cols="3" rows="3"> </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="email_address">Start Date</label>
+                                        <div class="form-line">
+                                            <input type="text" id="email_address" class="datepicker form-control" name="StartDate" placeholder="Enter Start Date" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email_address">End Date</label>
+                                        <div class="form-line">
+                                            <input type="text" id="email_address" class="datepicker form-control" name="EndDate" placeholder="Enter End Date" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <label for="email_address2">Status</label>
+                                <div class="form-group">
+                                    <input name="IsActiv" type="radio" value="True" id="radio_39" class="with-gap radio-col-green" checked />
+                                    <label for="radio_39">Yes</label>
+                                    <input name="IsActiv" type="radio" value="False" id="radio_30" class="with-gap radio-col-red" />
+                                    <label for="radio_30">No</label>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary m-t-15 waves-effect">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+  

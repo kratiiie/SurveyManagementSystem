@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "AttemptSurvey";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+ 
+        <meta name="viewport" content="width=device" />
+        <title>Attempt Survey</title>
+        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    
+</head>
+<body>
+ 
+        <section class="content">
+            <div class="container-fluid">
+
+
+
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="#"class="btn bg-pink waves-effect">Add New</a> &nbsp; &nbsp; <button type="button" id="sendsurveyid" class="btn bg-red waves-effect">Send Survey  &nbsp;  <img src="/AdminAssets/images/loader.gif" id="loader" style="display:none"></button>
+                        <br>
+                        <br>
+                        <p id="pmsg" style="display:none;color:green">Successfully Send Survey...!</p>
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    All Survey
+                                </h2>
+
+                            </div>
+                            <div class="body">
+                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                    <div class="dt-buttons"><a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a><a class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="dt-button buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>PDF</span></a><a class="dt-button buttons-print" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Print</span></a></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label></div><table class="table table-bordered table-striped table-hover dataTable js-exportable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+                                S.N.
+                            : activate to sort column descending" style="width: 42px;">
+                                                    S.N.
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                Selection
+                            : activate to sort column ascending" style="width: 81px;">
+                                                    Selection
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                Name
+                            : activate to sort column ascending" style="width: 55px;">
+                                                    Name
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                Description
+                            : activate to sort column ascending" style="width: 99px;">
+                                                    Description
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                Start Date
+
+                            : activate to sort column ascending" style="width: 88px;">
+                                                    Start Date
+
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                End Date
+                            : activate to sort column ascending" style="width: 79px;">
+                                                    End Date
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                Status
+                            : activate to sort column ascending" style="width: 61px;">
+                                                    Status
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+                                Action
+                            : activate to sort column ascending" style="width: 62px;">
+                                                    Action
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+
+
+
+                                            <tr class="odd"><td valign="top" colspan="8" class="dataTables_empty">No data available in table</td></tr>
+                                        </tbody>
+
+                                    </table><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">Next</a></li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                </div>
+        </section>
+</body>
+</html>
